@@ -1,0 +1,10 @@
+macro(z_add_test name)
+    add_executable(${name} ${name}.cpp)
+    target_link_libraries(${name} PUBLIC zson)
+    add_test(NAME ${name} COMMAND ${name})
+endmacro()
+
+z_add_test(test_print_token)
+z_add_test(test_scanner)
+z_add_test(test_parser)
+z_add_test(test_edit_save_json)
