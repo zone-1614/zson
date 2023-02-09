@@ -23,31 +23,6 @@ class json {
 public:
     json() : type_(DataType::NIL) { }
 
-    // json(double d) {
-    //     var_ = d;
-    //     type_ = DataType::NUMBER;
-    // }
-
-    // json(const std::string& s) {
-    //     var_ = s;
-    //     type_ = DataType::STRING;
-    // }
-
-    // json(bool b) {
-    //     var_ = b;
-    //     type_ = DataType::BOOLEAN;
-    // }
-
-    // json(std::shared_ptr<json_array> arr) {
-    //     var_ = arr;
-    //     type_ = DataType::ARRAY;
-    // }
-
-    // json(std::shared_ptr<json_object> obj) {
-    //     var_ = obj;
-    //     type_ = DataType::OBJECT;
-    // }
-
     void set_var(double d) {
         var_ = d;
         type_ = DataType::NUMBER;
