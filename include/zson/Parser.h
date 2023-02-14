@@ -17,6 +17,7 @@ private:
     bool isAtEnd();
     Token advance();
     Token peek();
+    Token previous();
     bool match(TokenType type);
     void error(const std::string& log);
 
